@@ -18,3 +18,14 @@ def accueil(request):
 	csrftoken = getCookie('csrftoken')
 	console.log(csrftoken)
 
+
+	# Create your views here.
+def inscription(request):
+ 	response = render(request,'inscription.html')
+ 	return response
+
+	# Create your views here.
+def connexion(request):
+	response = render(request,'connexion.html')
+	return response
+
