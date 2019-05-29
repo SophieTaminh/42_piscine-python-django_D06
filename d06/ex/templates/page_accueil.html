@@ -6,18 +6,8 @@
 	</head>
 
 	<body>
-
-		{% if request.COOKIES.mycookie %} <!-- est ce que mon cookie est definie-->
-			cookie value : {{ request.COOKIES.mycookie }}
-		{% else %}
-			cookies undefined.
-		{% endif%} 
-
-		<form method='POST'>
-			{% csrf_token %}
-			<input type='text' name='text'/>
-			<input type='submit' value='submit'/>
-		</form>
-		
+		<nav>
+			Hello : {{ user_gived }}!
+		</nav>
 	</body>
 </html>

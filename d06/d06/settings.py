@@ -119,3 +119,26 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CACHES = {
+   'default': {
+       'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+   }
+}
+
+COOKIE_AGE = 42
+
+USER_NAMES = [
+   'Naruto',
+   'Gaga',
+   'Marcel',
+   'Dugain',
+   'Autant',
+   'Phoebe',
+   'Play',
+   'Janice',
+   'Xen',
+   'Saperlpopette',
+]
+
+CSRF_COOKIE_SECURE = True
